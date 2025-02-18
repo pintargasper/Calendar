@@ -1,0 +1,55 @@
+.create .box {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.create hr {
+    margin: 0;
+}
+
+.create button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal .events {
+    height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal .event-text {
+    max-width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal .event-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal input {
+    font-size: large;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #dee2e6;
+}
+
+.modal input:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+.modal .btn-close {
+    box-shadow: none !important;
+}
