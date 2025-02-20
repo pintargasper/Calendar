@@ -1,14 +1,41 @@
-.create .box {
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --primary-color: #dee2e6;
+    --secondary-color: #ffffff;
+}
+
+.index .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.index .content {
+    flex: 1;
+}
+
+.navbar .margin {
+    margin-left: 20px;
+}
+
+.create .main .box {
     height: 100px;
     margin: 0;
     padding: 0;
 }
 
-.create hr {
+.create .main hr {
     margin: 0;
 }
 
-.create button {
+.create .main button {
     width: 150px;
     padding: 10px;
     border-radius: 5px;
@@ -17,6 +44,38 @@
     font-size: large;
     text-align: center;
     cursor: pointer;
+}
+
+.create .aside input[type="file"] {
+    height: auto;
+    font-size: large;
+    display: none;
+}
+
+.create .aside input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.create .aside input[type="checkbox"]:checked::after {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+.create .aside input[type="checkbox"] {
+    font-size: large;
+    box-shadow: none;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.create .aside .select {
+    height: auto;
+    font-size: large;
+    box-shadow: none;
+    border-color: var(--primary-color);
 }
 
 .modal .events {
@@ -42,12 +101,12 @@
     font-size: large;
     padding: 10px;
     border-radius: 5px;
-    border-color: #dee2e6;
+    border-color: var(--primary-color);
 }
 
 .modal input:focus {
     box-shadow: none;
-    border-color: #dee2e6;
+    border-color: var(--primary-color);
 }
 
 .modal .btn-close {
